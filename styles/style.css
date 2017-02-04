@@ -1,0 +1,326 @@
+* {
+  font-family: 'Lato';
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.header {
+	display: flex;
+    justify-content: space-between;
+	width: 100%;
+}
+
+.header-title {
+	padding-left: 30px;
+	color: #47a3da;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.header-title > p {
+	font-size: 18px;
+	letter-spacing: 5px;
+	margin-bottom: 5px; 
+}
+
+.header-title > h1 {
+	font-size: 35px;
+	margin-top: 4px;
+	padding-bottom: 30px;
+}
+
+.social {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 40px;
+	margin-right: 25px;
+}
+
+.social-icon {
+	display: inline-block;
+	color: #47a3da;
+	padding: 5px;
+	border: 3px solid #47a3da;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.social-icon:hover {
+	color: #FFF;
+	background-color: #47a3da; 
+}
+
+
+
+.tshirt-wrapper {
+	display: inline-block;
+	width: 33.33%;
+	text-align: center;
+	padding: 10px;
+}
+
+.tshirt-img-div {
+	max-width: 100%;
+	border: 3px solid #47a3da;
+	position: relative;
+	perspective: 800px;
+}
+
+
+.tshirt img {
+	max-width: 100%;
+	padding: 35px 20px;
+}
+
+.icon {
+	display: inline-block;
+	width: 20%;
+	font-size: 20px;
+	padding: 7px 5px 5px 5px;
+	border-right: 3px solid #47a3da;
+	border-bottom: 3px solid #47a3da;
+	color: #47a3da;
+	position: relative;
+}
+
+.icon:first-child {
+	border-left: 3px solid #47a3da;
+}
+
+.icon:hover {
+	background: #47a3da;
+	color: #FFF;
+}
+
+.material-icons.md-30 { 
+	font-size: 30px; 
+}
+
+.title {
+	display: inline-block;
+	font-size: 25px;
+	margin: 0;
+	padding: 15px 5px;
+	width:50%;
+	text-align: left;
+	vertical-align: top;
+	color: #47a3da;
+}
+
+.price{
+	display: inline-block;
+	font-size: 25px;
+	margin: 0;
+	padding: 15px 5px;
+	width:50%;
+	text-align: right;
+	vertical-align: top;
+	color: #47a3da;
+}
+
+.flip-icon {
+	height: 35px;
+	width: 35px;
+	border-left: 3px solid #47a3da;
+	border-bottom: 3px solid #47a3da;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #47a3da;
+	padding-top: 4px;
+}
+
+
+.flip-icon:hover {
+	background: #47a3da;
+	color: #FFF;
+}
+
+.triangle {
+	height: 11px;
+	width: 11px;
+	border-left: 3px solid #47a3da;
+	border-bottom: 3px solid #47a3da;
+	background-color: #FFF;
+	transform: rotate(-45deg);
+	position: absolute;
+	bottom: -8px;
+	left: 40%;
+}
+
+#triangle-shift {
+	margin-left: 4px;
+}
+
+
+
+
+/*--------------------------------------------------
+ START OF: Hover Color Box - Animation
+ --------------------------------------------------- */
+
+.color-options {
+	display: none;
+	text-align: center;
+	background: #fff;
+	height: 100px;
+	width: 100px;
+	padding: 5px;
+	border: 3px solid #47a3da;
+	position: absolute;
+	bottom: 41px;
+	left: 50%;
+	margin-left: -50px;
+    animation: slide-down .5s 1, fadein .5s;
+}
+
+@keyframes slide-down {
+    0%   {bottom: 80px;}
+    100% {bottom: 40px;}
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.color-box {
+	display: inline-block;
+	padding: 4px;
+}
+
+.color {
+	height: 32px;
+	width: 32px;
+	
+}
+
+.color:hover {
+	transform: scale(1.1);
+}
+
+.icon:hover .color-options {
+	display: block;
+}
+
+#pink {
+	background-color: #e577aa;
+}
+
+#blue {
+	background-color: #72bbe9;
+}
+
+#orange {
+	background-color: #e5b178;
+}
+
+#green {
+	background-color: #7abe93;
+}
+
+/*--------------------------------------------------
+ END OF: Hover Color Box - Animation
+ --------------------------------------------------- */
+
+
+ /*--------------------------------------------------
+ START OF: Hover Size Box - Animation
+ --------------------------------------------------- */
+
+.size-options {
+	display: none;
+	text-align: center;
+    color: #47a3da;
+    background: #fff;
+    width: 75px;
+    padding: 5px;
+    border: 3px solid #47a3da;
+    position: absolute;
+    bottom: 41px;
+    left: 50%;
+    margin-left: -37px;
+    animation: slide-down .5s 1, fadein .5s;
+}
+
+.size-options > .material-icons {
+	padding: 20px;
+}
+
+.size-box {
+	display: block;
+	padding: 4px;
+}
+
+.size:hover {
+	transform: scale(1.5);
+}
+
+.icon:hover .size-options {
+	display: block;
+}
+
+button {
+	background-color: #fff;
+	border: none;
+}
+
+/*--------------------------------------------------
+ END OF: Hover Size Box - Animation
+ --------------------------------------------------- */
+
+
+@media (max-width: 1000px) {
+	.tshirt-wrapper {
+	width: 50%;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.tshirt-wrapper {
+	width: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	.tshirt-wrapper {
+	width: 300px;
+	}
+	.header {
+		width: 300px;
+	}
+}
+
+@media (max-width: 900px) {
+	.header {
+		margin: 0 auto;
+		display: block;
+		text-align:	center; 
+		
+	}
+	.header-title {
+		display: block;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	.header-title h1 {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.social {
+		display: block;
+		margin: 10px 10px 25px 10px;
+	}
+}
+
+
